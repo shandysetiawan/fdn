@@ -9,7 +9,8 @@ function App() {
   return (
     <div>
       <Provider store={store}>
-        <EditorChoices></EditorChoices>a<LatestReviews></LatestReviews>s
+        <EditorChoices></EditorChoices>
+        <LatestReviews></LatestReviews>
         <LatestArticles></LatestArticles>
       </Provider>
     </div>

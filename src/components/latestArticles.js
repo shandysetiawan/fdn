@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import boardAction from "../store/actions/boardAction";
+import styles from "../styles/latestArticles.module.css";
 
 const LatestArticles = () => {
   const dispatch = useDispatch();
@@ -16,21 +17,41 @@ const LatestArticles = () => {
   if (loading) return <h1 style={{ textAlign: "center" }}>Loading</h1>;
 
   return (
-    <>
-      <div>Latest Articles </div>
-      <div>So you can make better purchase decision</div>
+    <div className={styles.bodyArticle}>
+      <div className={styles.headTitle}>
+        <div>
+          <p>Latest Articles </p>
+          <p>So you can make better purchase decision</p>
+        </div>
+        <div>
+          <p>See More {">"} </p>
+        </div>
+      </div>
       <section className="containerArticles">
-        <div className="deckArticles"></div>
-        {dataArticles &&
-          dataArticles.map((article) => {
-            return (
-              <>
-                <div className="articleCard">{article.title}</div>
-              </>
-            );
-          })}
+        <div className={styles.deckArticle}>
+          {dataArticles &&
+            dataArticles.map((article) => {
+              return (
+                <>
+                  <div className={styles.cardArticle}>
+                    <div className={styles.cardContent}>
+                      <div>
+                        <img src={article.image}></img>
+                      </div>
+                      <p>{article.title}</p>
+                    </div>
+                    <div>
+                      <p>
+                        {article.author} | {article.published_at}
+                      </p>
+                    </div>
+                  </div>
+                </>
+              );
+            })}
+        </div>
       </section>
-    </>
+    </div>
   );
 };
 

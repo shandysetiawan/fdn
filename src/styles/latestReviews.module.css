@@ -1,0 +1,37 @@
+.bodyReview {
+  margin: 30px 0 10px 0;
+}
+
+.headTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deckReview {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardReview {
+  background-color: aqua;
+  margin: 5px;
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .rightCard {
+  align-items: center;
+} */
+
+.reviewContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topContent {
+  display: flex;
+  border-bottom: 80% solid red;
+}

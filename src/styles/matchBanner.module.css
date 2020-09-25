@@ -1,0 +1,20 @@
+.bodyBanner {
+  background-color: #fcd9e0;
+  padding: 40px 0 0 0;
+}
+
+.matchContainer {
+  display: flex;
+}
+
+.middleContent {
+  width: 30%;
+}
+
+.buttonMatches {
+  padding: 10px;
+  background-color: #db294d;
+  border: none;
+  color: #ffffff;
+  border-radius: 3px;
+}

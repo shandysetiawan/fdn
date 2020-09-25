@@ -9,8 +9,8 @@ import TopFrame from "./components/topFrame";
 import Billboard from "./components/billboard";
 import BottomFrame from "./components/bottomFrame";
 import HorizontalBanner from "./components/horizontalBanner";
-import MrBanner from "./components/mrBanner";
 import Navbar from "./components/navbar";
+import MatchBanner from "./components/matchBanner";
 
 function App() {
   return (
@@ -21,10 +21,12 @@ function App() {
           <TopFrame></TopFrame>
           <Billboard></Billboard>
           <EditorChoices></EditorChoices>
+        </div>
+        <MatchBanner></MatchBanner>
+        <div className="container">
           <HorizontalBanner></HorizontalBanner>
-          <LatestReviews></LatestReviews>
           <LatestArticles></LatestArticles>
-          <MrBanner></MrBanner>
+          <LatestReviews></LatestReviews>
           <BottomFrame></BottomFrame>
         </div>
       </Provider>

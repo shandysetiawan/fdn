@@ -11,7 +11,7 @@ const EditorChoices = () => {
   if (loading) return <h1 style={{ textAlign: "center" }}>Loading</h1>;
 
   return (
-    <>
+    <div className={styles.bodyEditor}>
       <p>Editor's Choice</p>
       <p>Curated with love</p>
       <section className="containerEditor">
@@ -44,7 +44,7 @@ const EditorChoices = () => {
             })}
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

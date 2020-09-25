@@ -1,0 +1,24 @@
+.deckEditor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardEditor {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #dedede;
+  margin: 20px;
+  border-radius: 7px;
+  display: flex;
+}
+
+.contentCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 150px;
+}

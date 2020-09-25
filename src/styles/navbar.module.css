@@ -1,0 +1,15 @@
+.navbarContainer {
+  border-bottom: 1px solid #dedede;
+}
+
+.listItems {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.item {
+  margin: 30px;
+  color: #000000;
+  text-decoration: none;
+}

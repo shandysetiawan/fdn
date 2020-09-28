@@ -1,11 +1,13 @@
 .navbarContainer {
   border-bottom: 1px solid #dedede;
+  padding: 10px 0;
 }
 
 .listItems {
   display: flex;
   list-style: none;
   justify-content: center;
+  font-weight: bold;
 }
 
 .item {

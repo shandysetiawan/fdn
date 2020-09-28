@@ -1,5 +1,30 @@
 .bodyEditor {
-  margin: 30px 0 0 0;
+  margin: 30px 0;
+  overflow-x: scroll;
+}
+
+.containerThumbnail {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  z-index: 1;
+}
+
+.editorData {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 70px;
 }
 
 .deckEditor {
@@ -11,9 +36,10 @@
   width: 300px;
   height: 350px;
   border: 1px solid #dedede;
-  margin: 20px;
+  margin-right: 20px;
   border-radius: 7px;
   display: flex;
+  position: relative;
 }
 
 .contentCard {
@@ -21,8 +47,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-img {
+.imgEditor {
   max-width: 150px;
+}
+
+.txtEditor {
+  font-weight: bold;
+}
+
+.txtRole {
+  color: gray;
+  font-size: 12px;
+  margin: 6px 0;
+}
+
+.star {
+  color: red;
 }

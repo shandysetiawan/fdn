@@ -17,7 +17,7 @@ const LatestReviews = () => {
         <div className={styles.leftContent}>
           <div className={styles.headTitle}>
             <div>
-              <p>Latest Reviews </p>
+              <h2>Latest Reviews </h2>
               <p>So you can make better purchase decision</p>
             </div>
             <div>
@@ -29,26 +29,29 @@ const LatestReviews = () => {
               {dataReviews &&
                 dataReviews.map((review) => {
                   return (
-                    <>
-                      <div className={styles.cardReview}>
-                        <div className={styles.cardContent}>
-                          <div className={styles.topContent}>
-                            <img src={review.product.image}></img>
-                            <div className={styles.rightCard}>
-                              <p>{review.product.name}</p>
-                              <p>{review.product.desc}</p>
-                            </div>
-                          </div>
+                    <div className={styles.cardReview}>
+                      <div className={styles.topContent}>
+                        <img
+                          src={review.product.image}
+                          alt=""
+                          className={styles.imgReview}
+                        ></img>
+                        <div className={styles.rightCard}>
+                          <p>{review.product.name}</p>
+                          <p>{review.product.desc}</p>
                         </div>
                       </div>
-                    </>
+                      <div className={styles.separation}></div>
+                      <p>{review.star}</p>
+                      <p>{review.comment}</p>
+                      <span>Read More</span>
+                    </div>
                   );
                 })}
             </div>
           </section>
         </div>
-
-        <MrBanner></MrBanner>
+        <MrBanner />
       </div>
     </div>
   );

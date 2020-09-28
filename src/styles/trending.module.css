@@ -1,0 +1,14 @@
+.headTitle {
+  margin-top: 30px;
+}
+.cardDeck {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+  background-color: red;
+  margin: 20px 20px 0 20px;
+}

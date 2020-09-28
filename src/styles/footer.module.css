@@ -1,0 +1,6 @@
+.bodyFooter {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dedede;
+  margin: 30px 0 30px 0;
+}

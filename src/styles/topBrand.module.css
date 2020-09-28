@@ -1,0 +1,17 @@
+.bodyBrand {
+  margin-top: 30px;
+}
+
+.headTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brandLogos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgBrand {
+  width: 80px;
+}

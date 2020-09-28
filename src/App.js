@@ -11,6 +11,11 @@ import BottomFrame from "./components/bottomFrame";
 import HorizontalBanner from "./components/horizontalBanner";
 import Navbar from "./components/navbar";
 import MatchBanner from "./components/matchBanner";
+import TopBrand from "./components/topBrand";
+import PopularGroup from "./components/popularGroups";
+import LatestVideos from "./components/latestVideos";
+import Trending from "./components/trending";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -27,6 +32,11 @@ function App() {
           <HorizontalBanner></HorizontalBanner>
           <LatestArticles></LatestArticles>
           <LatestReviews></LatestReviews>
+          <PopularGroup></PopularGroup>
+          <LatestVideos></LatestVideos>
+          <Trending></Trending>
+          <TopBrand></TopBrand>
+          <Footer></Footer>
           <BottomFrame></BottomFrame>
         </div>
       </Provider>

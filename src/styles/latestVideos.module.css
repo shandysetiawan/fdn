@@ -1,0 +1,28 @@
+.bodylatestVid {
+  margin: 30px 0 10px 0;
+}
+
+.headTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.videosContent {
+  display: flex;
+  justify-content: center;
+}
+
+.rightVideo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.leftImage {
+  width: 740px;
+}
+
+.rightImage {
+  width: 370px;
+}

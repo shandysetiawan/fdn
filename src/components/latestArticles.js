@@ -20,7 +20,7 @@ const LatestArticles = () => {
     <div className={styles.bodyArticle}>
       <div className={styles.headTitle}>
         <div>
-          <p>Latest Articles </p>
+          <h2>Latest Articles </h2>
           <p>So you can make better purchase decision</p>
         </div>
         <div>
@@ -36,9 +36,13 @@ const LatestArticles = () => {
                   <div className={styles.cardArticle}>
                     <div className={styles.cardContent}>
                       <div>
-                        <img src={article.image}></img>
+                        <img
+                          src={article.image}
+                          alt=""
+                          className={styles.imgArticles}
+                        ></img>
                       </div>
-                      <p>{article.title}</p>
+                      <h2>{article.title}</h2>
                     </div>
                     <div>
                       <p>
